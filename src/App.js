@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import PizzaContextProvider from "./contexts/PizzaContext";
+import Navbar from "./components/NavBar";
+import PizzaList from "./components/PizzaList";
+import NewPizzaForm from "./components/PizzaForm";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PizzaContextProvider>
+        <Navbar />
+        <PizzaList />
+        <NewPizzaForm />
+      </PizzaContextProvider>
     </div>
   );
 }

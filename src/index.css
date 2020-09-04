@@ -1,13 +1,74 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: #93eaf2;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  background: #7eced6;
+  margin: 20px auto;
+  width: 90%;
+  max-width: 700px;
+  color: #eee;
+}
+.navbar {
+  padding: 10px 20px;
+  text-align: center;
+  background: #06c4d6;
+}
+.navbar h1 {
+  margin: 10px 0;
+}
+.pizza-list {
+  margin: 20px;
+}
+.pizza-list ul {
+  padding: 0;
+  list-style-type: none;
+}
+.pizza-list li {
+  background: #06c4d6;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+.pizza-list li:hover {
+  opacity: 0.7;
+  text-decoration: line-through;
+}
+.pizza-list .pizzaType {
+  font-weight: bold;
+  color: #fff;
+  font-size: 1.2em;
+}
+.pizza-list .place {
+  font-size: 0.9em;
+  color: #ddd;
+}
+.empty {
+  margin: 20px;
+  text-align: center;
+}
+form {
+  padding: 20px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin: 6px 0;
+  background: #b3f4f9;
+  color: #000;
+  border: 0;
+}
+input[type="submit"] {
+  margin: 10px auto;
+  background: #eee;
+  border: 0;
+  padding: 6px 20px;
+  display: block;
 }
